@@ -113,7 +113,6 @@ nav h1:hover {
 
 .mobile-menu a:hover {
 	color: crimson;
-	background-color: #FFF;
 }
 
 @media (min-width: 768px) {
@@ -126,15 +125,16 @@ nav h1:hover {
 	}
 }
 
-
+/* Search Design*/
 .search {
     background-color: transparent;
     border: 2px solid #2d2e36;
     border-radius: 50px;
-    color: #fff;
+    color: rgb(205, 205, 205);
     font-family: inherit;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
 }
 
 .search::placeholder {
@@ -143,7 +143,17 @@ nav h1:hover {
 
 .search:focus {
     background-color: #2d2e36;
+    color: rgb(236, 236, 236);
     outline: none;
+}
+
+/* 'Movies & Series to Watch' Text */
+#text {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    font-size: 18px;
+    color: #eee;
 }
 
 main {
@@ -176,6 +186,7 @@ main {
     /* letter-spacing: 0.5px; */
 }
 
+/* Title of the Movie */
 .movie-info #title {
     margin: 0;
 }
@@ -187,34 +198,38 @@ main {
     padding: 0.25rem 0.5rem;
 }
 
-.movie-info #rating {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
+/* Release Date Position */
 #release-date {
     position: absolute;
     top: 8px;
     right: 16px;
 }
 
+/* Rating Position */
+.movie-info #rating {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Rating Colors */
+
+/* >=8 */
 .movie-info span.green {
     color: rgb(0, 255, 0);
 }
 
+/* >=4 */
 .movie-info span.orange {
     color: orange;
 }
 
+/* >=1 */
 .movie-info span.red {
     color: rgb(255, 0, 0);
 }
 
-#text {
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-    font-size: 18px;
-    color: #eee;
+/* No rating */
+.movie-info span.gray {
+    color: rgb(255, 255, 255);
 }
