@@ -5,69 +5,104 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies & Series</title>
-
+    <title>Entertainment</title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
 
     <script src="js/search.js" defer></script>
+    <script src="js/nav.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            Entertainment1
-        </div>
-        <form id="form">
-            <input type="text" id="search" placeholder="Search" class="search" autocomplete="off" />
-        </form>
-    </header>
+        <nav>
+            <form id="form">
+                <input type="text" id="search" placeholder="Search Watchlist" class="search" autocomplete="off" />
+            </form>
+			<div class="menu">
+				<a href="movies.html">Movies</a>
+				<a href="series.html">Series</a>
+			</div>
 
+			<button class="hamburger">
+				<span class="material-icons">menu</span>
+			</button>
+		</nav>
+
+		<div class="mobile-menu">
+            <a href="movies.html">Movies</a>
+            <a href="series.html">Series</a>
+		</div>
+    </header>
+    <!-- <form id="form">
+        <input type="text" id="search" placeholder="Search" class="search" autocomplete="off" />
+    </form> -->
     <main id="main">
         <div class="movie">
-            <img src="https://cdn.discordapp.com/attachments/1066119098792165468/1066463757355728926/Avatar_The_Way_of_Water.jpg" alt="Avatar: The Way of Water">
+            <img src="img/2012.jpg" alt="2012">
             <div class="movie-info">        
-                <span id="title">Avatar: The Way of Water</span>
-                <span class="green" id="rating">9</span>
-                <span id="release-date">2022</span>
+                <span id="title">2012</span>
+                <span class="red" id="rating">2</span>
+                <span id="release-date">2009</span>
             </div>
         </div>  
         <div class="movie">
-            <img src="https://cdn.discordapp.com/attachments/1066119098792165468/1066808754416402543/avengers_infinity_war.jpg" alt="Avengers: Infinity War">
+            <img src="img/aquaman.jpg" alt="Aquaman">
             <div class="movie-info">
-                <span id="title">Avengers: Infinity War</span>
+                <span id="title">Aquaman</span>
                 <span class="green" id="rating">9</span>
                 <span id="release-date">2018</span>
             </div>
         </div>     
         <div class="movie">
-            <img src="https://image.tmdb.org/t/p/w1280/zj0Hyaj4l0paZ9Ls5Y9K3LctZLI.jpg" alt="The Loft">
+            <img src="img/black_adam.jpg" alt="Black Adam">
             <div class="movie-info">
-                <h3>TF2</h3>
-                <span>8.5</span>
+                <span id="title">Black Adam</span>
+                <span class="orange" id="rating">5</span>
+                <span id="release-date">2022</span>
             </div>
         </div>    
         <div class="movie">
-            <img src=
-            "https://image.tmdb.org/t/p/w1280/zj0Hyaj4l0paZ9Ls5Y9K3LctZLI.jpg" 
-            alt="The Loft">
+            <img src="img/bumblebee.jpg" alt="BumbleBee">
             <div class="movie-info">
-                <h3>CSGO</h3>
-                <span>8.5</span>
+                <span id="title">BumbleBee</span>
+                <span class="orange" id="rating">4</span>
+                <span id="release-date">2018</span>
             </div>
-        </div>    
+        </div>  
         <div class="movie">
-            <img src=
-            "https://image.tmdb.org/t/p/w1280/zj0Hyaj4l0paZ9Ls5Y9K3LctZLI.jpg" 
-            alt="The Loft">
+            <img src="img/dune.jpg" alt="Dune">
             <div class="movie-info">
-                <h3>OVERWATCH</h3>
-                <span>8.5</span>
+                <span id="title">Dune</span>
+                <span class="orange" id="rating">4</span>
+                <span id="release-date">2021</span>
             </div>
-        </div>    
+        </div>  
+        <div class="movie">
+            <img src="img/geostorm.jpg" alt="Geostorm">
+            <div class="movie-info">
+                <span id="title">Geostorm</span>
+                <span class="red" id="rating">3</span>
+                <span id="release-date">2017</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/it.jpg" alt="It">
+            <div class="movie-info">
+                <span id="title">It</span>
+                <span class="green" id="rating">9</span>
+                <span id="release-date">2017</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/jack_reacher.jpg" alt="Jack Reacher">
+            <div class="movie-info">
+                <span id="title">Jack Reacher</span>
+                <span class="red" id="rating">3</span>
+                <span id="release-date">2012</span>
+            </div>
+        </div> 
     </main>
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
 </body>
 
 </html>
