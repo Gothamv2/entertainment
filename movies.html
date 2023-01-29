@@ -5,20 +5,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies & Series</title>
+    <title>Entertainment</title>
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
 
     <script src="js/search.js" defer></script>
     <script src="js/nav.js" defer></script>
+    <script src="js/rowcounter.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
+            <form id="form">
+                <input type="text" id="search" placeholder="Search Movies" class="search" autocomplete="off" />
+            </form>
 			<div class="menu">
-                <a href="index.html">Watchlist</a>
-				<a href="movies.html">Movies</a>
+				<a href="index.html">Watchlist</a>
 				<a href="series.html">Series</a>
 			</div>
 
@@ -28,26 +31,146 @@
 		</nav>
 
 		<div class="mobile-menu">
-            <a href="index.html">Watchlist</a>
             <a href="movies.html">Movies</a>
             <a href="series.html">Series</a>
 		</div>
     </header>
-    <form id="form">
-        <input type="text" id="search" placeholder="Search" class="search" autocomplete="off" />
-    </form>
+
+    <!-- Automatically count how many movies we have watched -->
+    <span id="text">Movies watched: <span id="countText"></span></span>
+
+     <!-- Display all movies -->
     <main id="main">
         <div class="movie">
-            <img src="img/2012.jpg" alt="2012">
+            <img src="img/avatar_the_way_of_water.jpg" alt="Avatar: The Way of Water">
             <div class="movie-info">        
-                <span id="title">2012</span>
-                <span class="red" id="rating">2</span>
-                <span id="release-date">2009</span>
+                <span id="title">Avatar: The Way of Water</span>
+                <span class="green" id="rating">9</span>
+                <span id="release-date">2022</span>
             </div>
         </div>  
+        <div class="movie">
+            <img src="img/avengers_infinity_war.jpg" alt="Avengers: Infinity War">
+            <div class="movie-info">
+                <span id="title">Avengers: Infinity War</span>
+                <span class="green" id="rating">9</span>
+                <span id="release-date">2018</span>
+            </div>
+        </div>    
+        <div class="movie">
+            <img src="img/black_crab.jpg" alt="Black Crab">
+            <div class="movie-info">
+                <span id="title">Black Crab</span>
+                <span class="orange" id="rating">7</span>
+                <span id="release-date">2022</span>
+            </div>
+        </div>     
+
+        <div class="movie">
+            <img src="img/jung_e.jpg" alt="Jung_E">
+            <div class="movie-info">
+                <span id="title">Jung_E</span>
+                <span class="orange" id="rating">5</span>
+                <span id="release-date">2018</span>
+            </div>
+        </div>     
+        <div class="movie">
+            <img src="img/monster_hunter.jpg" alt="Monster Hunter">
+            <div class="movie-info">
+                <span id="title">Monster Hunter</span>
+                <span class="red" id="rating">3</span>
+                <span id="release-date">2020</span>
+            </div>
+        </div>        
+        <div class="movie">
+            <img src="img/project_power.jpg" alt="Project Power">
+            <div class="movie-info">
+                <span id="title">Project Power</span>
+                <span class="orange" id="rating">4</span>
+                <span id="release-date">2020</span>
+            </div>
+        </div>   
+        <div class="movie">
+            <img src="img/the_5th_wave.jpg" alt="The 5th Wave">
+            <div class="movie-info">
+                <span id="title">The 5th Wave</span>
+                <span class="orange" id="rating">6</span>
+                <span id="release-date">2016</span>
+            </div>
+        </div>   
+        <div class="movie">
+            <img src="img/the_curse_of_halloween_jack.jpg" alt="The Curse of Halloween Jack">
+            <div class="movie-info">
+                <span id="title">The Curse of Halloween Jack</span>
+                <span class="red" id="rating">1</span>
+                <span id="release-date">2019</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/transformers.jpg" alt="Transformers">
+            <div class="movie-info">
+                <span id="title">Transformers</span>
+                <span class="orange" id="rating">7</span>
+                <span id="release-date">2007</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/transformers_revenge_of_the_fallen.jpg" alt="Transformers 2">
+            <div class="movie-info">
+                <span id="title">Transformers 2</span>
+                <span class="orange" id="rating">6</span>
+                <span id="release-date">2009</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/transformers_dark_of_the_moon.jpg" alt="Transformers 3">
+            <div class="movie-info">
+                <span id="title">Transformers 3</span>
+                <span class="green" id="rating">8</span>
+                <span id="release-date">2011</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/transformers_age_of_extinction.jpg" alt="Transformers 4">
+            <div class="movie-info">
+                <span id="title">Transformers 4</span>
+                <span class="green" id="rating">8</span>
+                <span id="release-date">2014</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/triple_frontier.jpg" alt="Triple Frontier">
+            <div class="movie-info">
+                <span id="title">Triple Frontier</span>
+                <span class="orange" id="rating">6</span>
+                <span id="release-date">2019</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/troll.jpeg" alt="Troll">
+            <div class="movie-info">
+                <span id="title">Troll</span>
+                <span class="red" id="rating">3</span>
+                <span id="release-date">2022</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/twilight.jpg" alt="Twilight">
+            <div class="movie-info">
+                <span id="title">Twilight</span>
+                <span class="orange" id="rating">6</span>
+                <span id="release-date">2008</span>
+            </div>
+        </div> 
+        <div class="movie">
+            <img src="img/warcraft.jpg" alt="Warcraft">
+            <div class="movie-info">
+                <span id="title">Warcraft</span>
+                <span class="orange" id="rating">6</span>
+                <span id="release-date">2016</span>
+            </div>
+        </div> 
     </main>
-
-
 </body>
 
 </html>
